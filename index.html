@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo do IPVA</title>
+    <link rel="stylesheet" href='estilo.css'>
+</head>
+<body>
+    <h1>IPVA</h1>
+    <section id='caixa1'>
+        
+        <!--seleção de categorias-->
+        
+        <div id='esquerda'>
+            <h3>Selecione a categoria do veículo</h3>
+        <label for='tipo'>Motos de até 50 cc</label>
+        <input type='radio' name='tipo' id='um'><br>
+        <label for='tipo'>Motos de 50 até 300 cc</label>
+        <input type='radio' name='tipo' id='dois'><br>
+        <label for='tipo'>Motos de 300 até 600 cc</label>
+        <input type='radio' name='tipo' id='tres'><br>
+        <label for='tipo'>Motos acima  de 600 cc</label>
+        <input type='radio' name='tipo' id='quatro'><br>
+        <label for='tipo'>Carros de até 180 cv</label>
+        <input type='radio' name='tipo' id='cinco'><br><label for='tipo'>Carros acima de 180 cv</label>
+        <input type='radio' name='tipo' id='seis'><br>
+        <input type='submit' value='Limpar' onclick='limpar1()'>
+        </div>
+        <!--espaços para preencher-->
+        <div id='direita'>
+        <label for='dia'>Dia:</label>
+        <input type='number' name='dia' id='dia' min="1" max="31">
+        <label for='mes'>Mês:</label>
+        <input type='number' name='mes' id='mes' min="1" max="12"><br><br>
+        <label for='veiculo'>Preço do veículo:</label><br>
+        <input type='number' name='veiculo' id='veiculo' min='1000'><br>
+        <input type='submit' onclick='ipva()' value='Calcular'><br><br>
+        
+        <!--resultados-->
+        Ipva: <div id='resultado1'></div>Custo total do Primeiro Emplcamento: <div id='taxas'></div><br>
+        
+        
+        </div>
+    </section>
+    
+
+    <footer>&copy; por Wemmerson Albuquerque - <a href='https://twitter.com/garoawalb' target="_blank">@garoawalb</a> - PicPay para doações @garoawalb</footer>
+
+    <script src='script.js'></script>
+</body>
+</html>
+<!--
+    Autor:Wemmerson Felipi Albuquerque de Lima
+    Data final: 20 de Novembro de 2020
+    Obs: falta comentar o código
+-->
